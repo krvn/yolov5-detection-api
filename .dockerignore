@@ -1,25 +1,19 @@
-# Models (large files)
-models/*.pt
-!models/.gitkeep
+# Git
+.git
+.gitignore
 
 # Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
-.Python
 venv/
 .venv/
 ENV/
-env/
 
 # IDE
 .idea/
 .vscode/
-*.swp
-*.swo
-.spyderproject
-.spyproject
 
 # OS
 .DS_Store
@@ -29,15 +23,16 @@ Thumbs.db
 *.log
 logs/
 
-# Docker
-.docker/
+# Documentation
+*.md
+docs/
 
 # Testing
 .pytest_cache/
 .coverage
 htmlcov/
+tests/
 
-# Distribution
-dist/
-build/
-*.egg-info/
+# Models (will be mounted as volume)
+models/*.pt
+!models/.gitkeep
